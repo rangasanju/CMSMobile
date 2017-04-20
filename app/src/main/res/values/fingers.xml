@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fingers">
+        <item>L1</item>
+        <item>L2</item>
+        <item>L3</item>
+        <item>L4</item>
+        <item>L5</item>
+        <item>R5</item>
+        <item>R4</item>
+        <item>R3</item>
+        <item>R2</item>
+        <item>R1</item>
+    </string-array>
+</resources>

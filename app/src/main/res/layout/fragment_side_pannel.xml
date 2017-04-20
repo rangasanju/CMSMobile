@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_x="0dp"
+        android:layout_y="500dp"
+        android:text="test"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15sp"/>
+
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/imageViewFinger1"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:src="@android:drawable/picture_frame"
+        android:layout_x="11dp"
+        android:layout_y="1dp"
+        android:layout_alignParentTop="true"/>
+
+
+
+    <ImageView
+        android:id="@+id/imageViewFinger2"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:src="@android:drawable/picture_frame"
+        android:layout_x="212dp"
+        android:layout_y="1dp"
+        android:layout_toRightOf="@+id/imageViewFinger1"
+        android:layout_alignParentTop="true" />
+
+    <Spinner
+        android:layout_height="wrap_content"
+        android:layout_width="130dp"
+        android:id="@+id/spinner"
+        android:layout_x="1dp"
+        android:layout_y="1dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/imageViewFinger2"
+        android:layout_alignEnd="@+id/imageViewFinger2"
+        android:layout_marginRight="132dp"
+        android:layout_marginEnd="132dp"></Spinner>
+
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="3dp"
+        android:layout_y="352dp"
+        android:text="@string/register"
+        android:textSize="28sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/imageViewFinger2"
+        android:layout_alignEnd="@+id/imageViewFinger2" />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Select Finger"
+        android:id="@+id/textView"
+        android:layout_below="@+id/imageViewFinger1"
+        android:layout_alignLeft="@+id/spinner"
+        android:layout_alignStart="@+id/spinner" />
+
+
+</RelativeLayout>
